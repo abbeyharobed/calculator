@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.calculator{
+    position: relative;
+    display: grid;
+}
+.calculator .digits{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: cursive;
+}
+.calculator span{
+    display: grid;
+    margin: auto;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: blueviolet;
+    place-items: center;
+    border: 1px solid black;
+}
+.calculator span:active{
+    background: cornflowerblue;
+    color: darkblue;
+}
+.calculator span.clear{
+    grid-column: span 2;
+    width: 142px;
+}
